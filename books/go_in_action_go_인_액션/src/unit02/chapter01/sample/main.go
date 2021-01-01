@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"os"
+	"unit02/chapter01/sample/search"
 )
 
 // init 함수는 main 함수보다 먼저 호출된다.
@@ -13,4 +14,6 @@ func init() {
 
 // main 함수는 프로그램의 진입점이다.
 func main() {
+	// 지정한 검색어로 검색을 수행한다.
+	search.Run("Sherlock Holmes")
 }
