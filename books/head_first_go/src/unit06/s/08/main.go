@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-<<<<<<< HEAD
 // 슬라이드의 변경
 func main() {
 	array1 := [5]string{"a", "b", "c", "d", "e"}
