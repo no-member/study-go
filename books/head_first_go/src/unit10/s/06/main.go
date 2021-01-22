@@ -1,0 +1,31 @@
+package main
+
+import (
+	"fmt"
+	"log"
+	"unit10/calendar"
+)
+
+func main() {
+	event := calendar.Event{}
+	if err := event.SetYear(2019); err != nil {
+		log.Fatal(err)
+	}
+
+	if err := event.SetMonth(5); err != nil {
+		log.Fatal(err)
+	}
+
+	if err := event.SetDay(27); err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(event.Year())
+	fmt.Println(event.Month())
+	fmt.Println(event.Day())
+	fmt.Println()
+
+	fmt.Println(event.Date.Year())
+	fmt.Println(event.Date.Month())
+	fmt.Println(event.Date.Day())
+}
